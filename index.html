@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="stylesheet" type="text/css" href="./css/main.css"
+    <meta charset="utf-8">
+    <title>Test App</title>
+  </head>
+  <body>
+    <div id="app">
+      <div class="recipe">
+        <div class="recipe-picture">
+          <img v-bind:src="image">
+        </div>
+        <div class="recipe-info">
+          <h1 class="recipe-title">{{ pizza.title }}</h1>
+          <p class="recipe-desc">{{ pizza.description }}</p>
+          <p v-show="pizza.hasIngredients"> You have all the ingredients </p>
+          <ul>
+            <li v-for="ingredients in pizza.ingredients">{{ ingredients }}</li>
+          </ul>
+          <ul class="recipe-similar">
+            <li v-for="recRecipe in pizza.similar" :key="recRecipe.recipeKey">{{ recRecipe.title }}</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script src="./js/main.js"></script>
+</html>
