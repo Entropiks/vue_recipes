@@ -1,19 +1,5 @@
-* {
-  padding: 0;
-  margin: 0;
-}
-
-.recipe-similar li {
-  list-style-type: none;
-  flex-direction: row;
-  margin: 10px;
-  background-color: #c7c7c7;
-  width: 20%;
-  height: 75px;
-}
-
-.recipe-similar {
-  display: flex;
-  height: 100%;
-  width: auto;
+body {
+  background: #EECDA3;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #EF629F, #EECDA3);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #EF629F, #EECDA3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
